@@ -7,12 +7,10 @@ pip-selfcheck.json
 *.py[cod]
 *.DS_Store
 
-
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.class
+*$py.class
 
 # C extensions
 *.so
