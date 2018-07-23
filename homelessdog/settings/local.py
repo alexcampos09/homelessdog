@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#60p2ycazntngfg$dp311ro#(8qf)bght5pg#voa6m#vse&5p_'
+from .passwords import SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Third Party Apps
     'crispy_forms',
-    'storages',
     # my APPs
 ]
 
@@ -127,8 +126,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 # LANGUAGE_CODE = 'pt-br'
 
-# TIME_ZONE = 'UTC'
-TIME_ZONE = 'America/Sao_Paulo'
+TIME_ZONE = 'UTC'
+# TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 

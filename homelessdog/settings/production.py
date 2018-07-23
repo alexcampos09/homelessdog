@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#60p2ycazntngfg$dp311ro#(8qf)bght5pg#voa6m#vse&5p_'
+from .passwords import SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -156,7 +156,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
     )
 
-# from homelessdog.aws.conf import *
+from homelessdog.aws.conf import *
 
 # CRISPY FORM TAGs SETTINGS
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
