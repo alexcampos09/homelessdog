@@ -1,8 +1,7 @@
 #Passwords
-*/passwords.py
+*passwords.py
 
-#Passwords
-*.passwords.py# From CFE
+# From CFE
 .Python
 bin/
 include/
